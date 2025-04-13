@@ -589,7 +589,8 @@ insert into Review (cookid, recipeid, rating, reviewtext, reviewdate) values (47
 insert into Review (cookid, recipeid, rating, reviewtext, reviewdate) values (19, 21, 2.9, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', '2025-03-07');
 insert into Review (cookid, recipeid, rating, reviewtext, reviewdate) values (36, 46, 1.4, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', '2024-12-19');
 insert into Review (cookid, recipeid, rating, reviewtext, reviewdate) values (2, 52, 1.9, 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', '2024-04-16');
-insert into Review (cookid, recipeid, rating, reviewtext, reviewdate) values (2, 35, 1.4, 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', '2024-09-22');insert into Review (cookid, recipeid, rating, reviewtext, reviewdate) values (33, 54, 1.5, 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', '2024-12-02');
+insert into Review (cookid, recipeid, rating, reviewtext, reviewdate) values (2, 54, 1.4, 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', '2024-09-22');
+insert into Review (cookid, recipeid, rating, reviewtext, reviewdate) values (33, 54, 1.5, 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', '2024-12-02');
 insert into Review (cookid, recipeid, rating, reviewtext, reviewdate) values (40, 44, 4.8, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', '2024-07-13');
 insert into Review (cookid, recipeid, rating, reviewtext, reviewdate) values (43, 14, 2.2, 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', '2024-08-22');
 insert into Review (cookid, recipeid, rating, reviewtext, reviewdate) values (54, 18, 3.8, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2024-09-03');
@@ -1261,115 +1262,6 @@ insert into SearchDiet (searchid, dietrestid) values (9, 10);
 insert into SearchDiet (searchid, dietrestid) values (90, 5);
 
 
-mockaroo
-
-Looking to generate fake data based on your production data? Mimic your databases with a trial account from
-
-Need some mock data to test your app? Mockaroo lets you generate up to 1,000 rows of realistic test data in CSV, JSON, SQL, and Excel formats.
-
-Need more data? Plans start at just $60/year. Mockaroo is also available as a docker image that you can deploy in your own private cloud.
-Field Name
-Type
-Options
-dietrestid
-​
-min:
-1
-​
-max:
-12
-​
-decimals:
-0
-​
-blank:
-0
-%
-
-​
-recipeid
-​
-min:
-1
-​
-max:
-57
-​
-decimals:
-0
-​
-blank:
-0
-%
-
-​
-# Rows:
-1000
-​
-Format:
-sql
-​
-Table Name:
-DietRecipe
-​
-include CREATE TABLE
-
-Mock your back-end API and start coding your UI today.
-It's hard to put together a meaningful UI prototype without making real requests to an API. By making real requests, you'll uncover problems with application flow, timing, and API design early, improving the quality of both the user experience and API. WithMockaroo, you can design your own mock APIs, You control the URLs, responses, and error conditions. Paralellize UI and API development and start delivering better applications faster today!
-
-Why is test data important?
-If you're developing an application, you'll want to make sure you're testing it under conditions that closely simulate a production environment. In production, you'll have an army of users banging away at your app and filling your database with data, which puts stress on your code. If you're hand-entering data into a test environment one record at a time using the UI, you're never going to build up the volume and variety of data that your app will accumulate in a few days in production. Worse, the data you enter will be biased towards your own usage patterns and won't match real-world usage, leaving important bugs undiscovered.
-
-Why is realistic data important?
-When your test database is filled with realistic looking data, you'll be more engaged as a tester. When you demonstrate new features to others, they'll understand them faster. Real data is varied and will contain characters that may not play nice with your code, such as apostrophes, or unicode characters from other languages. Testing with realistic data will make your app more robust because you'll catch errors that are likely to occur in production before release day.
-
-Why Mockaroo?
-There are plenty of great data mocking libraries available for almost every language and platform. But not everyone is a programmer or has time to learn a new framework. Mockaroo allows you to quickly and easily to download large amounts of randomly generated test data based on your own specs which you can then load directly into your test environment using SQL or CSV formats. No programming is required.
-
-Want to automate test data generation?
-If you sign in using your Google account, you can download random data programmatically by saving your schemas and using curl to download data in a shell script via a RESTful url.
-
-What's new in Mockaroo?
-9/27/2024
-Added data_generation_started_at and data_generation_uuid global values to formulas.
-3/12/2024
-Added mobile device data types.
-11/23/2023
-Added a Medical Beneficiary ID data type for the US Medicare system.
-11/1/2023
-You can now use the generate(datatype) function in Formulas to generate data with any of Mockaroo's built-in data types.
-10/11/2023
-You can now return records from a dataset in a Mock API using the from_dataset function.
-7/2/2023
-Added search boxes to each page.
-7/1/2023
-Added the ability to create reusable functions.
-6/24/2023
-Fixed a long standing bug in Sequence where the repeat parameter is not used correctly.
-6/10/2023
-The Password data type now allows you to customize the requirements.
-Added a new Password Hash type that returns the bcrypt hash of a random password.
-Added a new bcrypt(str) function to formulas.
-5/7/2023
-You can now generate more than 5000 records per file using the API with the new ?background=true parameter.
-4/15/2023
-You can now derive a schema from example CSV, JSON, or XML data.
-4/15/2023
-You can now generate your own custom data types using AI.
-4/12/2023
-You can now generate fields on any topic using AI
-4/2/2023
-Added support for XML attributes by naming fields starting with "@"
-2/3/2023
-Added the ability to generate v5 UUIDs via a new uuid_v5(namespace, name) function in formulas
-1/22/2023
-Added the ability to force the quote character on custom file formats.
-1/4/2023
-Added Address Line 2 type.
-© 2025 Mockaroo, LLC.   |  Terms of Use   |  EULA   |  Privacy
-Mockaroo - Random Data Generator and API Mocking Tool | JSON / CSV / SQL / Excel
-
-Preview
 insert into DietRecipe (dietrestid, recipeid) values (1, 57);
 insert into DietRecipe (dietrestid, recipeid) values (7, 19);
 insert into DietRecipe (dietrestid, recipeid) values (1, 25);
@@ -1401,36 +1293,36 @@ insert into DietRecipe (dietrestid, recipeid) values (6, 22);
 insert into DietRecipe (dietrestid, recipeid) values (1, 44);
 insert into DietRecipe (dietrestid, recipeid) values (9, 23);
 
-insert into DietRecipe (dietrestid, recipeid) values (1, 57);
-insert into DietRecipe (dietrestid, recipeid) values (7, 19);
-insert into DietRecipe (dietrestid, recipeid) values (1, 25);
-insert into DietRecipe (dietrestid, recipeid) values (4, 27);
-insert into DietRecipe (dietrestid, recipeid) values (10, 39);
-insert into DietRecipe (dietrestid, recipeid) values (11, 44);
-insert into DietRecipe (dietrestid, recipeid) values (11, 43);
-insert into DietRecipe (dietrestid, recipeid) values (3, 47);
-insert into DietRecipe (dietrestid, recipeid) values (10, 24);
-insert into DietRecipe (dietrestid, recipeid) values (7, 35);
-insert into DietRecipe (dietrestid, recipeid) values (8, 31);
-insert into DietRecipe (dietrestid, recipeid) values (5, 51);
-insert into DietRecipe (dietrestid, recipeid) values (5, 21);
-insert into DietRecipe (dietrestid, recipeid) values (5, 1);
-insert into DietRecipe (dietrestid, recipeid) values (5, 57);
-insert into DietRecipe (dietrestid, recipeid) values (11, 38);
-insert into DietRecipe (dietrestid, recipeid) values (7, 49);
-insert into DietRecipe (dietrestid, recipeid) values (2, 10);
-insert into DietRecipe (dietrestid, recipeid) values (7, 46);
-insert into DietRecipe (dietrestid, recipeid) values (1, 34);
-insert into DietRecipe (dietrestid, recipeid) values (2, 44);
-insert into DietRecipe (dietrestid, recipeid) values (8, 33);
-insert into DietRecipe (dietrestid, recipeid) values (12, 29);
-insert into DietRecipe (dietrestid, recipeid) values (7, 4);
-insert into DietRecipe (dietrestid, recipeid) values (8, 40);
-insert into DietRecipe (dietrestid, recipeid) values (7, 27);
-insert into DietRecipe (dietrestid, recipeid) values (6, 45);
-insert into DietRecipe (dietrestid, recipeid) values (6, 22);
-insert into DietRecipe (dietrestid, recipeid) values (1, 44);
-insert into DietRecipe (dietrestid, recipeid) values (9, 23);
+insert into DietRecipe (dietrestid, recipeid) values (1, 19);
+insert into DietRecipe (dietrestid, recipeid) values (7, 57);
+insert into DietRecipe (dietrestid, recipeid) values (1, 27);
+insert into DietRecipe (dietrestid, recipeid) values (4, 25);
+insert into DietRecipe (dietrestid, recipeid) values (10, 44);
+insert into DietRecipe (dietrestid, recipeid) values (11, 39);
+insert into DietRecipe (dietrestid, recipeid) values (11, 47);
+insert into DietRecipe (dietrestid, recipeid) values (3, 43);
+insert into DietRecipe (dietrestid, recipeid) values (10, 35);
+insert into DietRecipe (dietrestid, recipeid) values (7, 24);
+insert into DietRecipe (dietrestid, recipeid) values (8, 51);
+insert into DietRecipe (dietrestid, recipeid) values (5, 31);
+insert into DietRecipe (dietrestid, recipeid) values (11, 1);
+insert into DietRecipe (dietrestid, recipeid) values (5, 10);
+insert into DietRecipe (dietrestid, recipeid) values (5, 38);
+insert into DietRecipe (dietrestid, recipeid) values (11, 57);
+insert into DietRecipe (dietrestid, recipeid) values (7, 10);
+insert into DietRecipe (dietrestid, recipeid) values (2, 49);
+insert into DietRecipe (dietrestid, recipeid) values (7, 34);
+insert into DietRecipe (dietrestid, recipeid) values (1, 46);
+insert into DietRecipe (dietrestid, recipeid) values (2, 33);
+insert into DietRecipe (dietrestid, recipeid) values (8, 44);
+insert into DietRecipe (dietrestid, recipeid) values (12, 4);
+insert into DietRecipe (dietrestid, recipeid) values (7, 29);
+insert into DietRecipe (dietrestid, recipeid) values (8, 27);
+insert into DietRecipe (dietrestid, recipeid) values (7, 40);
+insert into DietRecipe (dietrestid, recipeid) values (6, 23);
+insert into DietRecipe (dietrestid, recipeid) values (6, 44);
+insert into DietRecipe (dietrestid, recipeid) values (1, 23);
+insert into DietRecipe (dietrestid, recipeid) values (9, 44);
 
 insert into Newsletter (chefid, recipeid, subid, substatus, subdate) values (63, 20, 1, 'Pending', '2025-03-04');
 insert into Newsletter (chefid, recipeid, subid, substatus, subdate) values (69, 41, 2, 'Pending', '2025-02-06');
